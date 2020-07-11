@@ -1,8 +1,5 @@
 ﻿using EPAM_Task2.Task2;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace EPAM_Task2_Test.Task2
 {
