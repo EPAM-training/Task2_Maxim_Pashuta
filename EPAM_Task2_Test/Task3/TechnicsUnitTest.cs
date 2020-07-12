@@ -17,7 +17,7 @@ namespace EPAM_Task2_Test.Task3
         {
             var technics1 = new Technics("technics", "computer1", 2099.99m);
             var technics2 = new Technics("technics", "computer2", 3099.99m);
-            var result = technics1 + technics2;
+            Technics result = technics1 + technics2;
             var actualResult = new Technics("technics", "computer1-computer2", 2599.99m);
             Assert.AreEqual(result, actualResult);
         }
@@ -54,7 +54,7 @@ namespace EPAM_Task2_Test.Task3
         {
             var technics = new Technics("technics", "computer1", 2099.99m);
             var result = (int)technics;
-            var actualResult = 209999;
+            int actualResult = 209999;
             Assert.AreEqual(result, actualResult);
         }
 
@@ -66,7 +66,7 @@ namespace EPAM_Task2_Test.Task3
         {
             var technics = new Technics("technics", "computer1", 2099.99m);
             var result = (decimal)technics;
-            var actualResult = 2099.99m;
+            decimal actualResult = 2099.99m;
             Assert.AreEqual(result, actualResult);
         }
     }

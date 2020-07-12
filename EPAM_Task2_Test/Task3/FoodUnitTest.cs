@@ -17,7 +17,7 @@ namespace EPAM_Task2_Test.Task3
         {
             var food1 = new Food("food", "milk", 13.99m);
             var food2 = new Food("food", "meat", 15.99m);
-            var result = food1 + food2;
+            Food result = food1 + food2;
             var actualResult = new Food("food", "milk-meat", 14.99m);
             Assert.AreEqual(result, actualResult);
         }
@@ -54,7 +54,7 @@ namespace EPAM_Task2_Test.Task3
         {
             var food = new Food("food", "milk", 13.99m);
             var result = (int)food;
-            var actualResult = 1399;
+            int actualResult = 1399;
             Assert.AreEqual(result, actualResult);
         }
 
@@ -66,7 +66,7 @@ namespace EPAM_Task2_Test.Task3
         {
             var food = new Food("food", "milk", 13.99m);
             var result = (decimal)food;
-            var actualResult = 13.99m;
+            decimal actualResult = 13.99m;
             Assert.AreEqual(result, actualResult);
         }
     }

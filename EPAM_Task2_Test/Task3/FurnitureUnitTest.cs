@@ -17,7 +17,7 @@ namespace EPAM_Task2_Test.Task3
         {
             var furniture1 = new Furniture("furniture", "cupboard", 120.99m);
             var furniture2 = new Furniture("furniture", "table", 50.99m);
-            var result = furniture1 + furniture2;
+            Furniture result = furniture1 + furniture2;
             var actualResult = new Furniture("furniture", "cupboard-table", 85.99m);
             Assert.AreEqual(result, actualResult);
         }
@@ -54,7 +54,7 @@ namespace EPAM_Task2_Test.Task3
         {
             var furniture = new Furniture("furniture", "cupboard", 120.99m);
             var result = (int)furniture;
-            var actualResult = 12099;
+            int actualResult = 12099;
             Assert.AreEqual(result, actualResult);
         }
 
@@ -66,7 +66,7 @@ namespace EPAM_Task2_Test.Task3
         {
             var furniture = new Furniture("furniture", "cupboard", 120.99m);
             var result = (decimal)furniture;
-            var actualResult = 120.99m;
+            decimal actualResult = 120.99m;
             Assert.AreEqual(result, actualResult);
         }
     }

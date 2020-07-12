@@ -76,7 +76,7 @@
 
             Furniture furniture = (Furniture)obj;
 
-            return (_type == furniture.Type && _name == furniture.Name && _price == furniture.Price);
+            return ((_type == furniture.Type) && (_name == furniture.Name) && (_price == furniture.Price));
         }
 
         /// <summary>
@@ -85,7 +85,7 @@
         /// <returns>Hash code</returns>
         public override int GetHashCode()
         {
-            return _name.GetHashCode() * 11 + _type.GetHashCode() * 12 + _price.GetHashCode() * 13;
+            return ((_name.GetHashCode() * 11) + (_type.GetHashCode() * 12) + (_price.GetHashCode() * 13));
         }
     }
 }

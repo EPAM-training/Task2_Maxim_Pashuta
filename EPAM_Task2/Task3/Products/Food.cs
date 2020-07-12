@@ -74,9 +74,9 @@
                 return false;
             }
 
-            Food food = (Food)obj;
+            var food = (Food)obj;
 
-            return (_type == food.Type && _name == food.Name && _price == food.Price);
+            return ((_type == food.Type) && (_name == food.Name) && (_price == food.Price));
         }
 
         /// <summary>
@@ -85,7 +85,7 @@
         /// <returns>Hash code</returns>
         public override int GetHashCode()
         {
-            return _name.GetHashCode() * 11 + _type.GetHashCode() * 12 + _price.GetHashCode() * 13;
+            return ((_name.GetHashCode() * 11) + (_type.GetHashCode() * 12) + (_price.GetHashCode() * 13));
         }
     }
 }

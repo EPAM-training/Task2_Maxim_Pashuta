@@ -83,7 +83,7 @@ namespace EPAM_Task2.Task1
         /// <returns>Three-dimensional vector</returns>
         public static ThreeDimensionalVector operator *(int number, ThreeDimensionalVector threeDemVector1)
         {
-            return threeDemVector1 * number;
+            return (threeDemVector1 * number);
         }
 
         /// <summary>
@@ -112,9 +112,9 @@ namespace EPAM_Task2.Task1
         /// <returns>Any number</returns>
         public static int operator *(ThreeDimensionalVector threeDemVector1, ThreeDimensionalVector threeDemVector2)
         {
-            return threeDemVector1.X * threeDemVector2.X +
-                   threeDemVector1.Y * threeDemVector2.Y +
-                   threeDemVector1.Z * threeDemVector2.Z;
+            return ((threeDemVector1.X * threeDemVector2.X) +
+                    (threeDemVector1.Y * threeDemVector2.Y) +
+                    (threeDemVector1.Z * threeDemVector2.Z);
         }
 
         /// <summary>
@@ -125,9 +125,9 @@ namespace EPAM_Task2.Task1
         /// <returns>Three-dimensional vector</returns>
         public static ThreeDimensionalVector CrossVectors(ThreeDimensionalVector threeDemVector1, ThreeDimensionalVector threeDemVector2)
         {
-            return new ThreeDimensionalVector(threeDemVector1.Y * threeDemVector2.Z - threeDemVector1.Z * threeDemVector2.Y,
-                                              threeDemVector1.Z * threeDemVector2.X - threeDemVector1.X * threeDemVector2.Z,
-                                              threeDemVector1.X * threeDemVector2.Y - threeDemVector1.Y * threeDemVector2.X);
+            return new ThreeDimensionalVector((threeDemVector1.Y * threeDemVector2.Z) - (threeDemVector1.Z * threeDemVector2.Y),
+                                              (threeDemVector1.Z * threeDemVector2.X) - (threeDemVector1.X * threeDemVector2.Z),
+                                              (threeDemVector1.X * threeDemVector2.Y) - (threeDemVector1.Y * threeDemVector2.X));
         }
 
         /// <summary>
@@ -144,9 +144,9 @@ namespace EPAM_Task2.Task1
 
             var threeDemVector = (ThreeDimensionalVector)obj;
 
-            return X.Equals(threeDemVector.X) &&
+            return (X.Equals(threeDemVector.X) &&
                    Y.Equals(threeDemVector.Y) &&
-                   Z.Equals(threeDemVector.Z);
+                   Z.Equals(threeDemVector.Z);)
         }
 
         /// <summary>
@@ -155,7 +155,7 @@ namespace EPAM_Task2.Task1
         /// <returns>Hash code</returns>
         public override int GetHashCode()
         {
-            return (X.GetHashCode() + Y.GetHashCode() + Z.GetHashCode()) * 3;
+            return ((X.GetHashCode() + Y.GetHashCode() + Z.GetHashCode()) * 3);
         }
 
         /// <summary>

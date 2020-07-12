@@ -17,7 +17,7 @@ namespace EPAM_Task2_Test.Task2
         {
             var polynomial1 = new Polynomial(7, 8, 9);
             var polynomial2 = new Polynomial(3, 2, 1);
-            var result = polynomial1 + polynomial2;
+            Polynomial result = polynomial1 + polynomial2;
             var actualResult = new Polynomial(10, 10, 10);
             Assert.AreEqual(result, actualResult);
         }
@@ -30,7 +30,7 @@ namespace EPAM_Task2_Test.Task2
         {
             var polynomial1 = new Polynomial(7, 8, 9);
             var polynomial2 = new Polynomial(9, 5, 14, 19, 36);
-            var result = polynomial1 + polynomial2;
+            Polynomial result = polynomial1 + polynomial2;
             var actualResult = new Polynomial(16, 13, 23, 19, 36);
             Assert.AreEqual(result, actualResult);
         }
@@ -43,7 +43,7 @@ namespace EPAM_Task2_Test.Task2
         {
             var polynomial1 = new Polynomial(7, 8, 9);
             var polynomial2 = new Polynomial(3, 2, 1);
-            var result = polynomial1 - polynomial2;
+            Polynomial result = polynomial1 - polynomial2;
             var actualResult = new Polynomial(4, 6, 8);
             Assert.AreEqual(result, actualResult);
         }
@@ -56,7 +56,7 @@ namespace EPAM_Task2_Test.Task2
         {
             var polynomial1 = new Polynomial(7, 8, 9);
             var polynomial2 = new Polynomial(9, 5, 14, 19, 36);
-            var result = polynomial1 - polynomial2;
+            Polynomial result = polynomial1 - polynomial2;
             var actualResult = new Polynomial(-2, 3, -5, -19, -36);
             Assert.AreEqual(result, actualResult);
         }
@@ -68,8 +68,8 @@ namespace EPAM_Task2_Test.Task2
         public void OperatorMultiply_WithPositivePolynomialAndNegativeNumber_GetNegativePolynomial()
         {
             var polynomial = new Polynomial(7, 8, 9);
-            var number = -2;
-            var result = polynomial * number;
+            int number = -2;
+            Polynomial result = polynomial * number;
             var actualResult = new Polynomial(-14, -16, -18);
             Assert.AreEqual(result, actualResult);
         }
@@ -81,8 +81,8 @@ namespace EPAM_Task2_Test.Task2
         public void OperatorMultiply_WithNegativePolynomialAndNegativeNumber_GetPositivePolynomial()
         {
             var polynomial = new Polynomial(-7, -8, -9);
-            var number = -2;
-            var result = polynomial * number;
+            int number = -2;
+            Polynomial result = polynomial * number;
             var actualResult = new Polynomial(14, 16, 18);
             Assert.AreEqual(result, actualResult);
         }
@@ -94,8 +94,8 @@ namespace EPAM_Task2_Test.Task2
         public void OperatorDivision_WithPositivePolynomialAndNegativeNumber_GetNegativePolynomial()
         {
             var polynomial = new Polynomial(14, 26, 8);
-            var number = -2;
-            var result = polynomial / number;
+            int number = -2;
+            Polynomial result = polynomial / number;
             var actualResult = new Polynomial(-7, -13, -4);
             Assert.AreEqual(result, actualResult);
         }
@@ -107,8 +107,8 @@ namespace EPAM_Task2_Test.Task2
         public void OperatorDivision_WithNegativePolynomialAndNegativeNumber_GetPositivePolynomial()
         {
             var polynomial = new Polynomial(-18, -8, -12);
-            var number = -2;
-            var result = polynomial / number;
+            int number = -2;
+            Polynomial result = polynomial / number;
             var actualResult = new Polynomial(9, 4, 6);
             Assert.AreEqual(result, actualResult);
         }
@@ -121,7 +121,7 @@ namespace EPAM_Task2_Test.Task2
         {
             var polynomial1 = new Polynomial(1, -1);
             var polynomial2 = new Polynomial(-3, 1);
-            var result = polynomial1 * polynomial2;
+            Polynomial result = polynomial1 * polynomial2;
             var actualResult = new Polynomial(-3, 4, -1);
             Assert.AreEqual(result, actualResult);
         }
@@ -134,7 +134,7 @@ namespace EPAM_Task2_Test.Task2
         {
             var polynomial1 = new Polynomial(1, -1);
             var polynomial2 = new Polynomial(-3, 1, 2);
-            var result = polynomial1 * polynomial2;
+            Polynomial result = polynomial1 * polynomial2;
             var actualResult = new Polynomial(-3, 4, 1, -2);
             Assert.AreEqual(result, actualResult);
         }
