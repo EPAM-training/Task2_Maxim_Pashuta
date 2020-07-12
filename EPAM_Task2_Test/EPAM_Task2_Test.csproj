@@ -14,10 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Task3\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\EPAM_Task2\EPAM_Task2.csproj" />
   </ItemGroup>
 
