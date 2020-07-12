@@ -8,7 +8,13 @@ namespace EPAM_Task2.Task2
     /// </summary>
     public class Polynomial
     {
+        /// <summary>
+        /// A field for storing the coefficients.
+        /// </summary>
         public readonly double[] Coefficients;
+        /// <summary>
+        /// A field for storing the degree.
+        /// </summary>
         public readonly int Degree;
 
         /// <summary>

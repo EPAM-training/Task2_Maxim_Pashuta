@@ -20,10 +20,19 @@ namespace EPAM_Task2.Task1
             Z = z;
         }
 
+        /// <summary>
+        /// Coord X.
+        /// </summary>
         public int X { get; set; }
 
+        /// <summary>
+        /// Coord Y.
+        /// </summary>
         public int Y { get; set; }
 
+        /// <summary>
+        /// Coord Y.
+        /// </summary>
         public int Z { get; set; }
 
         /// <summary>

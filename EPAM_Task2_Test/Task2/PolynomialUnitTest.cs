@@ -3,9 +3,15 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EPAM_Task2_Test.Task2
 {
+    /// <summary>
+    /// Class for testing the class Polynomial.
+    /// </summary>
     [TestClass]
     public class PolynomialUnitTest
     {
+        /// <summary>
+        /// Method for testing operator + when the degrees of both polynomials are equal.
+        /// </summary>
         [TestMethod]
         public void OperatorPlus_WhenDegreeBothPolynomialsEquals_GetPolynomial()
         {
@@ -16,6 +22,9 @@ namespace EPAM_Task2_Test.Task2
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing operator + when the degrees of both polynomials aren't equal.
+        /// </summary>
         [TestMethod]
         public void OperatorPlus_WhenDegreeBothPolynomialsNotEquals_GetPolynomial()
         {
@@ -26,6 +35,9 @@ namespace EPAM_Task2_Test.Task2
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing operator - when the degrees of both polynomials are equal.
+        /// </summary>
         [TestMethod]
         public void OperatorMinus_WhenDegreeBothPolynomialsEquals_GetPolynomial()
         {
@@ -36,6 +48,9 @@ namespace EPAM_Task2_Test.Task2
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing operator - when the degrees of both polynomials aren't equal.
+        /// </summary>
         [TestMethod]
         public void OperatorMinus_WhenDegreeBothPolynomialsNotEquals_GetPolynomial()
         {
@@ -46,6 +61,9 @@ namespace EPAM_Task2_Test.Task2
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing operator * when the positive polynamial and the negative number.
+        /// </summary>
         [TestMethod]
         public void OperatorMultiply_WithPositivePolynomialAndNegativeNumber_GetNegativePolynomial()
         {
@@ -56,6 +74,9 @@ namespace EPAM_Task2_Test.Task2
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing operator * when the negative polynamial and the positive number.
+        /// </summary>
         [TestMethod]
         public void OperatorMultiply_WithNegativePolynomialAndNegativeNumber_GetPositivePolynomial()
         {
@@ -66,6 +87,9 @@ namespace EPAM_Task2_Test.Task2
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing operator / when the positive polynamial and the negative number.
+        /// </summary>
         [TestMethod]
         public void OperatorDivision_WithPositivePolynomialAndNegativeNumber_GetNegativePolynomial()
         {
@@ -76,6 +100,9 @@ namespace EPAM_Task2_Test.Task2
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing operator / when the negative polynamial and the positive number.
+        /// </summary>
         [TestMethod]
         public void OperatorDivision_WithNegativePolynomialAndNegativeNumber_GetPositivePolynomial()
         {
@@ -86,6 +113,9 @@ namespace EPAM_Task2_Test.Task2
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing operator * when the degrees of both polynomials are equal.
+        /// </summary>
         [TestMethod]
         public void OperatorMultiply_WhenDegreeBothPolynomialsEquals_GetPolynomial()
         {
@@ -96,6 +126,9 @@ namespace EPAM_Task2_Test.Task2
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing operator * when the degrees of both polynomials are equal.
+        /// </summary>
         [TestMethod]
         public void OperatorMultiply_WhenDegreeBothPolynomialsNotEquals_GetPolynomial()
         {

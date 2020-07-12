@@ -4,9 +4,15 @@ using System;
 
 namespace EPAM_Task2_Test.Task1
 {
+    /// <summary>
+    /// Class for testing the class ThreeDimensionalVector.
+    /// </summary>
     [TestClass]
     public class ThreeDimensionalVectorUnitTest
     {
+        /// <summary>
+        /// Method for testing operator + with two positive vectors.
+        /// </summary>
         [TestMethod]
         public void OperatorPlus_WithTwoPosiniveVector_GetPositiveVector()
         {
@@ -17,6 +23,9 @@ namespace EPAM_Task2_Test.Task1
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing operator + with two negative vectors.
+        /// </summary>
         [TestMethod]
         public void OperatorPlus_WithTwoNegativeVector_GetNegativeVector()
         {
@@ -27,6 +36,9 @@ namespace EPAM_Task2_Test.Task1
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing the operator + when the first vector is opposite to the second vector.
+        /// </summary>
         [TestMethod]
         public void OperatorPlus_WhenFirstVectorIsOppositeSecondVector_GetZeroVector()
         {
@@ -37,6 +49,9 @@ namespace EPAM_Task2_Test.Task1
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing the operator - when the first vector is greater than the second vector.
+        /// </summary>
         [TestMethod]
         public void OperatorMinus_WhenFirstVectorMoreSecondVector_GetPositiveVector()
         {
@@ -47,6 +62,9 @@ namespace EPAM_Task2_Test.Task1
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing the operator - when the first vector is less than the second vector.
+        /// </summary>
         [TestMethod]
         public void OperatorMinus_WhenFirstVectorLessSecondVector_GetNegativeVector()
         {
@@ -57,6 +75,9 @@ namespace EPAM_Task2_Test.Task1
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing the operator - when the first vector is equal to the second vector.
+        /// </summary>
         [TestMethod]
         public void OperatorMinus_WhenFirstVectorEqualSecondVector_GetZeroVector()
         {
@@ -67,6 +88,9 @@ namespace EPAM_Task2_Test.Task1
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing the operator - when the first vector is positive and the second vector is negative.
+        /// </summary>
         [TestMethod]
         public void OperatorMinus_WhenFirstVectorIsPositiveSecondVectorIsNegative_GetPositiveVector()
         {
@@ -77,6 +101,9 @@ namespace EPAM_Task2_Test.Task1
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing the operator - when the first vector is negative and the second vector is positive.
+        /// </summary>
         [TestMethod]
         public void OperatorMinus_WhenFirstVectorIsNegativeSecondVectorIsPositive_GetNegativeVector()
         {
@@ -87,6 +114,9 @@ namespace EPAM_Task2_Test.Task1
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing the operator * when the vector is positive and the number is negative.
+        /// </summary>
         [TestMethod]
         public void OperatorMultiply_WhenVectorIsPositiveNumberIsNegative_GetNegativeVector()
         {
@@ -97,6 +127,9 @@ namespace EPAM_Task2_Test.Task1
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing the operator * when the vector is negative and the number is positive.
+        /// </summary>
         [TestMethod]
         public void OperatorMultiply_WhenVectorIsNegativeNumberIsPositive_GetNegativeVector()
         {
@@ -107,6 +140,9 @@ namespace EPAM_Task2_Test.Task1
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing the operator * when the number is zero.
+        /// </summary>
         [TestMethod]
         public void OperatorMultiply_WhenNumberIsZero_GetZeroVector()
         {
@@ -117,6 +153,9 @@ namespace EPAM_Task2_Test.Task1
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing the operator / when the vector is negative and the number is positive.
+        /// </summary>
         [TestMethod]
         public void OperatorDivision_WhenFirstVectorIsNegativeNumberIsPositive_GetNegativeVector()
         {
@@ -127,6 +166,9 @@ namespace EPAM_Task2_Test.Task1
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing the operator / when the number is zero.
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void OperatorDivision_WhenNumberIsZero_GetArgumentExeption()
@@ -136,6 +178,9 @@ namespace EPAM_Task2_Test.Task1
             var result = threeDimVector1 / number;
         }
 
+        /// <summary>
+        /// Method for testing operator * with two positive vectors.
+        /// </summary>
         [TestMethod]
         public void OperatorMultiply_WithTwoPositiveVectors_GetPositiveVector()
         {
@@ -146,6 +191,9 @@ namespace EPAM_Task2_Test.Task1
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// Method for testing a method "CrossVectors" with two positive vectors.
+        /// </summary>
         [TestMethod]
         public void CrossVectors_WithTwoPositiveVectors_GetPositiveVector()
         {

@@ -3,9 +3,15 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace EPAM_Task2_Test.Task3
 {
+    /// <summary>
+    /// Class for testing the class Food.
+    /// </summary>
     [TestClass]
     public class FoodUnitTest
     {
+        /// <summary>
+        /// The method for testing operator +.
+        /// </summary>
         [TestMethod]
         public void Test_OperatorPlus()
         {
@@ -16,6 +22,9 @@ namespace EPAM_Task2_Test.Task3
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// The method for testing conversion to Technics.
+        /// </summary>
         [TestMethod]
         public void Test_ConvertToTechnics()
         {
@@ -25,6 +34,9 @@ namespace EPAM_Task2_Test.Task3
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// The method for testing conversion to Furniture.
+        /// </summary>
         [TestMethod]
         public void Test_ConvertToFurniture()
         {
@@ -34,6 +46,9 @@ namespace EPAM_Task2_Test.Task3
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// The method for testing conversion to Int32.
+        /// </summary>
         [TestMethod]
         public void Test_ConvertToInt32()
         {
@@ -43,6 +58,9 @@ namespace EPAM_Task2_Test.Task3
             Assert.AreEqual(result, actualResult);
         }
 
+        /// <summary>
+        /// The method for testing conversion to Decimal.
+        /// </summary>
         [TestMethod]
         public void Test_ConvertToDecimal()
         {
