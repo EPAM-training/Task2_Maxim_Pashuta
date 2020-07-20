@@ -174,7 +174,7 @@ namespace EPAM_Task2.Task2
         /// <returns>Hash code</returns>
         public override int GetHashCode()
         {
-            return ((Coefficients.GetHashCode() + Degree.GetHashCode()) * Degree);
+            return ((Coefficients.GetHashCode() ^ Degree.GetHashCode()) ^ Degree);
         }
 
         /// <summary>

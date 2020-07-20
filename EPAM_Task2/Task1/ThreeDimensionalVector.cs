@@ -155,7 +155,7 @@ namespace EPAM_Task2.Task1
         /// <returns>Hash code</returns>
         public override int GetHashCode()
         {
-            return ((X.GetHashCode() + Y.GetHashCode() + Z.GetHashCode()) * 3);
+            return ((X.GetHashCode() ^ Y.GetHashCode() ^ Z.GetHashCode()) ^ 3);
         }
 
         /// <summary>

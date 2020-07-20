@@ -85,7 +85,7 @@
         /// <returns>Hash code</returns>
         public override int GetHashCode()
         {
-            return ((_name.GetHashCode() * 11) + (_type.GetHashCode() * 12) + (_price.GetHashCode() * 13));
+            return ((_name.GetHashCode() ^ 11) ^ (_type.GetHashCode() ^ 12) ^ (_price.GetHashCode() ^ 13));
         }
     }
 }
